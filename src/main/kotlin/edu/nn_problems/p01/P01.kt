@@ -1,4 +1,4 @@
-package edu.nn_problems
+package edu.nn_problems.p01
 
 //  P01 (*) Find the last element of a list.
 //  Example:

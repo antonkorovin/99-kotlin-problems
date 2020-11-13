@@ -1,4 +1,4 @@
-package edu.nn_problems
+package edu.nn_problems.p01
 
 import io.kotest.assertions.throwables.shouldThrow
 import io.kotest.core.spec.style.FunSpec
