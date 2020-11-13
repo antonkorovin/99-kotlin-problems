@@ -5,11 +5,11 @@ package edu.nn_problems
 //
 //  > last(listOf(1, 1, 2, 3, 5, 8))
 //  8
-fun builtInLast(list: List<Int>): Int {
+fun<T> builtInLast(list: List<T>): T {
     return list.last()
 }
 
-fun lastByIndex(list: List<Int>): Int {
+fun<T> lastByIndex(list: List<T>): T {
     if (list.isEmpty()) throw NoSuchElementException()
 
     return list[list.lastIndex]

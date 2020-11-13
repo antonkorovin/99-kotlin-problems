@@ -4,10 +4,10 @@ import io.kotest.assertions.throwables.shouldThrow
 import io.kotest.core.spec.style.FunSpec
 import io.kotest.matchers.shouldBe
 
-typealias LastFunc = (List<Int>) -> Int
+typealias LastFunc<T> = (List<T>) -> T
 
 class P01Test : FunSpec({
-    fun checkFun(f: LastFunc) {
+    fun checkFun(f: LastFunc<Int>) {
         f(listOf(1, 1, 2, 3, 5, 8)) shouldBe 8
         f(listOf(42)) shouldBe 42
 
