@@ -8,3 +8,9 @@ package edu.nn_problems
 fun builtInLast(list: List<Int>): Int {
     return list.last()
 }
+
+fun lastByIndex(list: List<Int>): Int {
+    if (list.isEmpty()) throw NoSuchElementException()
+
+    return list[list.lastIndex]
+}

@@ -20,4 +20,7 @@ class P01Test : FunSpec({
         checkFun(::builtInLast)
     }
 
+    test("last by index") {
+        checkFun(::lastByIndex)
+    }
 })
