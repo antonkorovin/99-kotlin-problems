@@ -12,3 +12,9 @@ fun <T>penultimate(list: List<T>): T {
 
     return list[list.lastIndex - 1];
 }
+
+fun <T>penultimateReversed(list: List<T>): T {
+    if (list.size < 2) throw NoSuchElementException()
+
+    return list.asReversed()[1];
+}

@@ -24,4 +24,8 @@ class P02Test : FunSpec({
         checkFun(::penultimate)
     }
 
+    test("penultimateReversed") {
+        checkFun(::penultimateReversed)
+    }
+
 })
