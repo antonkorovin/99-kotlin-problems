@@ -5,8 +5,6 @@ package edu.nn_problems
 //
 //  > last(listOf(1, 1, 2, 3, 5, 8))
 //  8
-
-
-fun last(list: List<Int>): Int {
+fun builtInLast(list: List<Int>): Int {
     return list.last()
 }
