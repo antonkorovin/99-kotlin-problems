@@ -10,8 +10,15 @@ class P06Test : FunSpec({
     fun checkFun(f: Func<Int>) {
         f(listOf(1, 2, 3, 2, 1)) shouldBe true
         f(listOf(1, 2, 2, 1)) shouldBe true
+        f(listOf(1, 1)) shouldBe true
+
+        f(listOf(1, 4, 3, 2, 1)) shouldBe false
+        f(listOf(1, 42, 2, 1)) shouldBe false
+        f(listOf(1, 42)) shouldBe false
+
         f(listOf(1, 2, 3, 2, 42)) shouldBe false
         f(listOf(42, 2, 3, 2, 1)) shouldBe false
+
         f(listOf(42)) shouldBe true
         f(listOf()) shouldBe false
     }
@@ -22,5 +29,9 @@ class P06Test : FunSpec({
 
     test("isPalindromeOptimized") {
         checkFun(::isPalindromeOptimized)
+    }
+
+    test("isPalindromeRecursive") {
+        checkFun(::isPalindromeRecursive)
     }
 })
