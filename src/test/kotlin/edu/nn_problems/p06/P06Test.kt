@@ -20,4 +20,7 @@ class P06Test : FunSpec({
         checkFun(::isPalindrome)
     }
 
+    test("isPalindromeOptimized") {
+        checkFun(::isPalindromeOptimized)
+    }
 })
