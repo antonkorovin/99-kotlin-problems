@@ -7,5 +7,5 @@ package edu.nn_problems.p06
 //  true
 
 fun <T>isPalindrome(list: List<T>): Boolean {
-    return list.reversed() == list;
+    return list.isNotEmpty() && list.reversed() == list;
 }
